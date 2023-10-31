@@ -1,0 +1,270 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIYUSH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars " onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Piyush</span></h1>
+                <span class="element" data-text="A&nbsp;Web&nbsp;Developer">A&nbsp;Web&nbsp;Developer</span>
+            </div>
+        </div>
+    </div>
+    <!-- About  -->
+    <section id="about"  class="show-animate">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/About.png" alt="" srcset="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti labore, ipsum odio illum
+                        aliquam alias deserunt quod et ad nobis? Ad, rerum excepturi in voluptate beatae sit distinctio
+                        quis laudantium incidunt? Officiis placeat, eveniet reiciendis quam consectetur ratione tempora
+                        libero nostrum tempore fugit repellendus quae similique mollitia vel aliquid culpa?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="Technical-bars">
+                            <div class="Technicalbars1">
+                                <div class="bar">
+                                    <div class="indfo"><i class="fab fa-html5"></i><span> HTML</span></div>
+                                    <div class="progress-line html">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="indfo"><i class="fab fa-css3-alt"></i><span> CSS</span></div>
+                                    <div class="progress-line css">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="indfo"><i class="fab fa-js"></i><span> Javascript</span><span style="font-size: 14px; margin-left: 25px;">75%</span></div>
+                                    <div class="progress-line js">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Technicalbars2">
+                                <div class="bar">
+                                    <div class="indfo"><i class="fab fa-Java"></i> <span> Java</span><span style="font-size: 14px; margin-left: 25px;">75%</span></div>
+                                    <div class="progress-line java">
+                                       <span></span>
+                                    </div>
+                                </div>
+                                <div class="bar">
+                                    <div class="indfo"><i class="fab fa-Java"></i><span> DSA</span><span style="font-size: 14px; margin-left: 40px;">80%</span></div>
+                                    <div class="progress-line dsa">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>React</span><br>Designing Web Sites</li>
+                            <li><span>HTML, CSS, Javascript</span><br>Creating Web Applications</li>
+                            <li><span>Java</span><br>Core Java</li>
+                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>React</span><br>Designing Web Sites</li>
+                            <li><span>HTML, CSS, Javascript</span><br>Creating Web Applications</li>
+                            <li><span>Java</span><br>Core Java</li>
+                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia adipisci quis, dicta ipsa
+                        perspiciatis eum deleniti natus! Placeat saepe asperiores ullam vero eaque explicabo consequatur
+                        fugiat. Sit, pariatur? Corrupti veniam molestias magnam aperiam quia delectus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>Web Dev.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia adipisci quis, dicta ipsa
+                        perspiciatis eum deleniti natus! Placeat saepe asperiores ullam vero eaque explicabo consequatur
+                        fugiat. Sit, pariatur? Corrupti veniam molestias magnam aperiam quia delectus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia adipisci quis, dicta ipsa
+                        perspiciatis eum deleniti natus! Placeat saepe asperiores ullam vero eaque explicabo consequatur
+                        fugiat. Sit, pariatur? Corrupti veniam molestias magnam aperiam quia delectus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Work -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Fitness Club</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ducimus?</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Ecommerce Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ducimus?</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Online Job Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ducimus?</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> vermapiyush823@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9350498328</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="Images/PIYUSH VERMA.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="emailSend(); reset(); return false;">
+                        <input type="text" id="Name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                | All rights reserved | This portfolio is made with <i class="fa-solid fa-heart"></i> by <a
+                    href="https://www.linkedin.com/in/piyush-verma-8a1b3b1b2/" target="_blank">Piyush Verma</a>
+            </p>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for (tablink of tabLinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabContents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+        function openmenu() {
+            document.getElementById('sidemenu').style.width = "100%";
+            document.getElementById('sidemenu').style.transition = "0.5s";
+        }
+        function closemenu() {
+            document.getElementById('sidemenu').style.width = "0%";
+            document.getElementById('sidemenu').style.transition = "0.5s";
+        }
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+    let sections = $("section");
+    $(window).scroll(function () {
+        sections.each(function () {
+            let top = $(window).scrollTop();
+            let offset = $(this).offset().top -400;
+            let height = $(this).outerHeight();
+
+            if (top >= offset && top < offset + height) {
+                $(this).addClass("show-animate");
+            } else {
+                $(this).removeClass("show-animate");
+            }
+        });
+    });
+});
+// cdn for jQuery
+    </script>
+</body>
+
+</html>
