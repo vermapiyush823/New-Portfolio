@@ -96,7 +96,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    -webkit-text-stroke: 0.5px white;
+   
     text-transform: uppercase;
 }
 .header-text .element::before{
