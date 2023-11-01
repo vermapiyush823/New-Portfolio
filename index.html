@@ -59,40 +59,26 @@
                     </div>
 
                     <div class="tab-contents active-tab" id="skills">
-                        <div class="Technical-bars">
-                            <div class="Technicalbars1">
-                                <div class="bar">
-                                    <div class="indfo"><i class="fab fa-html5"></i><span> HTML</span></div>
-                                    <div class="progress-line html">
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="bar">
-                                    <div class="indfo"><i class="fab fa-css3-alt"></i><span> CSS</span></div>
-                                    <div class="progress-line css">
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="bar">
-                                    <div class="indfo"><i class="fab fa-js"></i><span> Javascript</span><span style="font-size: 14px; margin-left: 25px;">75%</span></div>
-                                    <div class="progress-line js">
-                                        <span></span>
-                                    </div>
-                                </div>
+                        <div class="skills1">
+                            <h2>HTML</h2>
+                            <div class="progress-bar">
+                                <div class="html "><span>86%</span></div>
                             </div>
-                            <div class="Technicalbars2">
-                                <div class="bar">
-                                    <div class="indfo"><i class="fab fa-Java"></i> <span> Java</span><span style="font-size: 14px; margin-left: 25px;">75%</span></div>
-                                    <div class="progress-line java">
-                                       <span></span>
-                                    </div>
-                                </div>
-                                <div class="bar">
-                                    <div class="indfo"><i class="fab fa-Java"></i><span> DSA</span><span style="font-size: 14px; margin-left: 40px;">80%</span></div>
-                                    <div class="progress-line dsa">
-                                        <span></span>
-                                    </div>
-                                </div>
+                            <h2>CSS</h2>
+                            <div class="progress-bar">
+                                <div class="css"><span>74%</span></div>
+                            </div>
+                            <h2>Javascript</h2>
+                            <div class="progress-bar">
+                                <div class="javascript"><span>65%</span></div>
+                            </div>
+                            <h2>Java</h2>
+                            <div class="progress-bar">
+                                <div class="java"><span>54%</span></div>
+                            </div>
+                            <h2>React</h2>
+                            <div class="progress-bar">
+                                <div class="react"><span>49%</span></div>
                             </div>
                         </div>
                     </div>
@@ -252,7 +238,7 @@
     $(window).scroll(function () {
         sections.each(function () {
             let top = $(window).scrollTop();
-            let offset = $(this).offset().top -400;
+            let offset = $(this).offset().top -450;
             let height = $(this).outerHeight();
 
             if (top >= offset && top < offset + height) {
@@ -263,7 +249,7 @@
         });
     });
 });
-// cdn for jQuery
+
     </script>
 </body>
 
