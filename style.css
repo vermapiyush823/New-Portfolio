@@ -107,11 +107,7 @@ nav ul li a:hover::after{
     width: 0;
     height: 100%;
     color: #00A9FF;
-<<<<<<< Updated upstream
     -webkit-text-stroke: 0.5px #00A9FF;
-=======
-    -webkit-text-stroke: 1px #00A9FF;
->>>>>>> Stashed changes
     border-right: 5px solid #00A9FF;
     overflow: hidden;
     animation: animateText 5s linear infinite;
