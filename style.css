@@ -520,7 +520,7 @@ nav .fas{
         background-image: url(Images/background_phone.png);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 200px;
         font-size: 16px !important;
     } 
     .header-text .element{
