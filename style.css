@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
-  }
+    scroll-behavior:smooth;  
+}
     
 body {
   background:rgb(13 17 23);
@@ -521,12 +521,15 @@ form input, form textarea{
     padding: 15px;
     margin: 15px 0;
     border: 0;
-    background: #ababab65;
+    /* background: #ababab65; */
     background-color: rgb(17, 24, 39);
     outline:1px solid rgb(33 144 255);
     border-radius: 6px;
     font-size: 18px;
     color: #fff;
+}
+form input::placeholder, form textarea::placeholder{
+    color: rgb(208, 223, 255);
 }
 
 form .btn2{
@@ -559,23 +562,20 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(Images/background_phone.png);
+        background: #0A0B12;
     }
     .header-text{
         margin-top: 200px;
-        font-size: 16px !important;
+        /* font-size: 16px !important; */
     } 
     .header-text .element{
-        font-size: 20px;
+        font-size: 40px;
     }
     .header-text h1{
         font-size: 50px;
     }
-    .header-text span{
-        font-size: 30px !important; 
-    }
     .header-text h1 span{
-        font-size: 60px !important; 
+        font-size: 70px !important; 
     }
     nav .fas{
         display: block;
