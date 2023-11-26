@@ -597,13 +597,16 @@ nav .fas{
     .sub-title{
         font-size: 40px;
     }
-    .about-col-1,.about-col-2{
+    .about-col-2{
         flex-basis: 100%;
     }
     .about-col-1{
         margin-bottom: 30px;
     }
     .about-col-2{
+        font-size: 14px !important;
+    }
+    .about-col-2 p{
         font-size: 14px !important;
     }
     .tab-contents .skills1 h2{
