@@ -31,7 +31,7 @@ body {
   background-position: center;
 }
 .container {
-  padding: 10px 10%;
+  padding: 10px 7%;
 }
 
 nav {
@@ -42,7 +42,7 @@ nav {
 }
 
 .logo {
-  width: 140px;
+  width: 170px;
 }
 
 nav ul li {
@@ -71,15 +71,17 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 18%;
     font-size: 30px;
 }
 
 .header-text h1{
-    font-size: 90px;
+    font-size: 70px;
     margin-bottom: 20px; 
     animation: moveUp 3s linear 0.3s forwards;
-
+}
+.header-text h1 span{
+    font-size: 100px;
 }
 @keyframes moveUp
 {
@@ -569,10 +571,10 @@ nav .fas{
         /* font-size: 16px !important; */
     } 
     .header-text .element{
-        font-size: 40px;
+        font-size: 30px;
     }
     .header-text h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     .header-text h1 span{
         font-size: 70px !important; 
