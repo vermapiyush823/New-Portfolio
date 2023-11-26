@@ -574,7 +574,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #00A9FF;
+        background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
         position: fixed;
         top: 0;
         right: 0;
@@ -587,6 +587,19 @@ nav .fas{
     nav ul li{
         display: block;
         margin: 25px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
     }
     nav ul .fas{
         position: absolute;
