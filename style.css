@@ -241,7 +241,7 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 .skills1 .progress-bar{
-    background: #959595;
+    background: rgb(208, 223, 255) ;
     width: 800px;
     height: 10px;
     border-radius: 5px;
