@@ -109,7 +109,7 @@
         </div>
     </section>
     <!-- Services -->
-    <div id="services">
+    <section id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
     <!-- Work -->
     <section id="portfolio">
@@ -238,7 +238,7 @@
             $(window).scroll(function () {
                 sections.each(function () {
                     let top = $(window).scrollTop();
-                    let offset = $(this).offset().top - 450;
+                    let offset = $(this).offset().top - 400;
                     let height = $(this).outerHeight();
 
                     if (top >= offset && top < offset + height) {

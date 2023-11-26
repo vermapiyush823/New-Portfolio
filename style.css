@@ -4,10 +4,10 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
-}
-
+  }
+    
 body {
   background:rgb(13 17 23);
   color: white;
@@ -356,12 +356,16 @@ nav ul li a:hover::after{
     margin-top: 20px;
     display: inline-block;
 }
-
 .services-list div:hover{
     background : linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
     transform: translateY(-10px);
 }
-
+.services-list div:first-of-type:hover{
+    transform: translate(-10px,-10px);
+}
+.services-list div:nth-of-type(3):hover{
+    transform: translate(10px,-10px);
+}
 /* portfolio */
 
 #portfolio{
@@ -638,6 +642,16 @@ nav .fas{
         font-size: 6px;
         margin-top: -5px;
         margin-right: -10px;
+    }
+    .services-list div:hover{
+        background : linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
+        transform: translateY(-10px);
+    }
+    .services-list div:first-of-type:hover{
+        transform: translateY(-10px);
+    }
+    .services-list div:nth-of-type(3):hover{
+        transform: translateY(-10px);
     }
 
     .tab-links{
