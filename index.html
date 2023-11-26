@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -39,65 +42,67 @@
         </div>
     </div>
     <!-- About  -->
-    <section id="about"  class="show-animate">
+    <section id="about" class="show-animate">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/About.png" alt="" srcset="">
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm an aspiring software engineer, currently pursuing B.Tech in Computer Science. I have a keen
+                    interest in full-stack web development and a strong foundation in React, HTML, CSS, JavaScript,
+                    Java, and Data Structures and Algorithms. I'm passionate about learning new technologies and solving
+                    complex problems. I'm looking forward to contributing significantly to the field of software
+                    engineering.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti labore, ipsum odio illum
-                        aliquam alias deserunt quod et ad nobis? Ad, rerum excepturi in voluptate beatae sit distinctio
-                        quis laudantium incidunt? Officiis placeat, eveniet reiciendis quam consectetur ratione tempora
-                        libero nostrum tempore fugit repellendus quae similique mollitia vel aliquid culpa?</p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <div class="skills1">
-                            <h2>HTML</h2>
-                            <div class="progress-bar">
-                                <div class="html "><span>86%</span></div>
-                            </div>
-                            <h2>CSS</h2>
-                            <div class="progress-bar">
-                                <div class="css"><span>74%</span></div>
-                            </div>
-                            <h2>Javascript</h2>
-                            <div class="progress-bar">
-                                <div class="javascript"><span>65%</span></div>
-                            </div>
-                            <h2>Java</h2>
-                            <div class="progress-bar">
-                                <div class="java"><span>54%</span></div>
-                            </div>
-                            <h2>React</h2>
-                            <div class="progress-bar">
-                                <div class="react"><span>49%</span></div>
-                            </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="skills1">
+                        <h2>HTML</h2>
+                        <div class="progress-bar">
+                            <div class="html "><span>86%</span></div>
+                        </div>
+                        <h2>CSS</h2>
+                        <div class="progress-bar">
+                            <div class="css"><span>74%</span></div>
+                        </div>
+                        <h2>Javascript</h2>
+                        <div class="progress-bar">
+                            <div class="javascript"><span>65%</span></div>
+                        </div>
+                        <h2>Java</h2>
+                        <div class="progress-bar">
+                            <div class="java"><span>82%</span></div>
+                        </div>
+                        <h2>React</h2>
+                        <div class="progress-bar">
+                            <div class="react"><span>76%</span></div>
                         </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>React</span><br>Designing Web Sites</li>
-                            <li><span>HTML, CSS, Javascript</span><br>Creating Web Applications</li>
-                            <li><span>Java</span><br>Core Java</li>
-                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>React</span><br>Designing Web Sites</li>
-                            <li><span>HTML, CSS, Javascript</span><br>Creating Web Applications</li>
-                            <li><span>Java</span><br>Core Java</li>
-                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>React</span><hr>Developed and maintained complex user interfaces for web applications using React. Implemented state management using Redux to ensure efficient data flow across components.</li>
+                        <li><span>HTML, CSS, Javascript</span><hr>Designed and built responsive web applications using HTML, CSS, and JavaScript. Ensured cross-browser compatibility and implemented best practices for web standards.</li>
+                        <li><span>Java</span><hr>Developed robust and scalable Java applications. Proficient in object-oriented programming concepts and design patterns. Experience with multithreading and concurrency in Java.</li>
+                        <li><span>DSA</span><hr>Strong understanding of Data Structures and Algorithms. Experience in using appropriate data structures for optimizing the efficiency of various algorithms.</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech in Computer Science</span>
+                            <hr>Lovely Professional University | Phagwara,IN &nbsp; 20'July, 2025<br>8.25 CGPA
+                        </li>
+                        <li><span>Higher Secondary</span>
+                            <hr>Hindu Vidyapeeth | Sonipat,lN &nbsp; 16'April, 2020<br>85.6%
+                        </li>
+                        <li><span>Secondary</span>
+                            <hr>Hindu Vidyapeeth | Sonipat,lN &nbsp; 18'May, 2018<br>90.4%
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -111,30 +116,25 @@
                 <div>
                     <i class="fas fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia adipisci quis, dicta ipsa
-                        perspiciatis eum deleniti natus! Placeat saepe asperiores ullam vero eaque explicabo consequatur
-                        fugiat. Sit, pariatur? Corrupti veniam molestias magnam aperiam quia delectus.</p>
+                    <p>I specialize in creating attractive and functional websites. I focus on design aesthetics, user experience, and search engine optimization to ensure your website not only looks good but also ranks well in search results.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fas fa-crop"></i>
-                    <h2>Web Dev.</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia adipisci quis, dicta ipsa
-                        perspiciatis eum deleniti natus! Placeat saepe asperiores ullam vero eaque explicabo consequatur
-                        fugiat. Sit, pariatur? Corrupti veniam molestias magnam aperiam quia delectus.</p>
+                    <h2>Web Development</h2>
+                    <p>With a strong foundation in HTML, CSS, JavaScript, and React, I develop responsive and dynamic websites. I ensure that the websites I build are scalable, maintainable, and meet the client's requirements.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-regular fa-user"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia adipisci quis, dicta ipsa
-                        perspiciatis eum deleniti natus! Placeat saepe asperiores ullam vero eaque explicabo consequatur
-                        fugiat. Sit, pariatur? Corrupti veniam molestias magnam aperiam quia delectus.</p>
+                    <p>I design user interfaces that are intuitive and user-friendly. I focus on user experience to ensure that the end-users find the application easy to navigate and use. I use modern design principles to create unique and beautiful designs.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- Work -->
     <section id="portfolio">
         <div class="container">
@@ -230,25 +230,25 @@
 
     </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
         $(document).ready(function () {
-    let sections = $("section");
-    $(window).scroll(function () {
-        sections.each(function () {
-            let top = $(window).scrollTop();
-            let offset = $(this).offset().top -450;
-            let height = $(this).outerHeight();
+            let sections = $("section");
+            $(window).scroll(function () {
+                sections.each(function () {
+                    let top = $(window).scrollTop();
+                    let offset = $(this).offset().top - 450;
+                    let height = $(this).outerHeight();
 
-            if (top >= offset && top < offset + height) {
-                $(this).addClass("show-animate");
-            } else {
-                $(this).removeClass("show-animate");
-            }
+                    if (top >= offset && top < offset + height) {
+                        $(this).addClass("show-animate");
+                    } else {
+                        $(this).removeClass("show-animate");
+                    }
+                });
+            });
         });
-    });
-});
 
     </script>
 </body>

@@ -7,15 +7,26 @@
 html{
     scroll-behavior: smooth;
 }
-body {
-  background: #090909;
-  color: white;
-}
 
+body {
+  background:rgb(13 17 23);
+  color: white;
+  scroll-behavior: smooth;
+  scrollbar-color: #969ba5 #242c38;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #969ba5;
+}
+::-webkit-scrollbar-track {
+    background: #161b22;
+}
 #header {
   width: 100%;
   height: 100vh;
-  background: url(Images/background.png);
+  background: url(Images/backround1.png);
   background-size: cover;
   background-position: center;
 }
@@ -50,7 +61,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -88,7 +99,12 @@ nav ul li a:hover::after{
     }
 }
 .header-text h1 span{
-    color: #00A9FF;
+    /* make gradient color using (#31B7C2 + #7BC393) */
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
 }
 
 .header-text .element {
@@ -96,7 +112,6 @@ nav ul li a:hover::after{
     font-size: 60px;
     color: transparent;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
     text-transform: uppercase;
 }
 .header-text .element::before{
@@ -106,9 +121,11 @@ nav ul li a:hover::after{
     left: 0;
     width: 0;
     height: 100%;
-    color: #00A9FF;
-    -webkit-text-stroke: 0.5px #00A9FF;
-    border-right: 5px solid #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border-right: 5px solid;
     overflow: hidden;
     animation: animateText 5s linear infinite;
 }
@@ -118,7 +135,7 @@ nav ul li a:hover::after{
         width: 0;
     }
     50%{
-        width: 100%;
+        width: 120%;
     }
 }
 
@@ -126,41 +143,31 @@ nav ul li a:hover::after{
 /* About */
 
 #about{
-    padding: 80px 0;
-    color: #ababab;
+    padding: 60px 0;
+    color: rgb(208, 223, 255);  
     transition: all 2s ease-in-out;
-    opacity: 0;
+    opacity: 1;
     scale: 0.7;
 }
 #about.show-animate{
     opacity: 1;
     scale: 1;
-
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-1{
-    flex-basis: 35%;
-}
-
-.about-col-1 img{
-    width: 100%;
-}
-
-.about-col-2{
-    flex-basis: 60%;
 }
 
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
-
+.about-col-2 .sub-title{
+    margin-bottom: 30px;
+}
+.about-col-2 p{
+    font-size: 20px;
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -177,7 +184,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -194,6 +201,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: white;
+    font-size: 20px;
     font-weight: bold;
 }
 .tab-contents{
@@ -201,7 +209,29 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+    text-align: left;
 }
+.tab-contents#experience ul li hr{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(33 144 255);
+    width: 80vw;
+}
+.tab-contents#experience ul li span{
+    color: white;
+    margin-bottom: 5px;
+}
+.tab-contents#education ul li hr{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(33 144 255);
+    width: 50vw;
+}
+.tab-contents#education ul li span{
+    color: white;
+    margin-bottom: 5px;
+}
+
 .skills1 h2{
     font-weight: 400;
     letter-spacing: 1px;
@@ -212,7 +242,7 @@ nav ul li a:hover::after{
 }
 .skills1 .progress-bar{
     background: #959595;
-    width: 600px;
+    width: 800px;
     height: 10px;
     border-radius: 5px;
 }
@@ -220,7 +250,7 @@ nav ul li a:hover::after{
     height: 10px;
     border-radius: 5px;
     width: 0%;
-    background-color: #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
 }
 .skills1 .progress-bar div span{
     height: 30px;
@@ -234,17 +264,18 @@ nav ul li a:hover::after{
     margin-right: -20px;
     color: #333;
     display: flex;
-    border: 1.5px solid #00A9FF;
+    border: 1.5px solid rgb(33 144 255);
     align-items: center;
     justify-content: center;
 }
 .html{
     animation: html 1s linear forwards;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 
 }
 .css{
     animation: css 1s linear forwards;
+
 }
 .javascript{
     animation: javascript 1s linear forwards;
@@ -267,17 +298,17 @@ nav ul li a:hover::after{
 }
 @keyframes javascript{
     100%{
-        width: 65;
+        width: 65%;
     }
 }
 @keyframes java{
     100%{
-        width: 56%;
+        width: 82%;
     }
 }
 @keyframes react{
     100%{
-        width: 49%;
+        width: 76%;
     }
 }
 
@@ -287,7 +318,7 @@ nav ul li a:hover::after{
 /* services */ 
 
 #service{
-    padding: 30px 0;    
+    padding: 30px 0;  
 }
 
 .services-list{
@@ -297,11 +328,16 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .services-list div{
-    background: #262626;
+    background-color: rgba(22,27,34,.5);
     padding: 40px;
     font-size: 13px;    
     font-weight: 300;
     border-radius: 10px;
+    --tw-shadow: 0px 10px 40px 0px rgba(40,49,60,.3);
+    --tw-shadow-colored: 0px 10px 40px 0px var(--tw-shadow-color);
+    border: 1px solid;
+    border-color: rgb(33 144 255);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div i{
@@ -322,7 +358,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #00aaffd5;
+    background : linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
     transform: translateY(-10px);
 }
 
@@ -355,7 +391,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.5),#00A9FF);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(33,144,255,1));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -400,7 +436,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #00A9FF;
+    border: 1px solid rgb(33 144 255);
     padding: 14px 50px;
     border-radius: 6px;
     color: white;
@@ -408,7 +444,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
 }
 
 /* contact */
@@ -426,7 +462,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #00A9FF;
+    color: rgb(33 144 255);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -469,7 +505,7 @@ nav ul li a:hover::after{
 
 .btn.btn2{
     display: inline-block;
-    background: #00A9FF;
+    background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
 }
 
 .contact-right form{
@@ -481,7 +517,8 @@ form input, form textarea{
     margin: 15px 0;
     border: 0;
     background: #ababab65;
-    outline:2px solid #00A9FF;
+    background-color: rgb(17, 24, 39);
+    outline:1px solid rgb(33 144 255);
     border-radius: 6px;
     font-size: 18px;
     color: #fff;
@@ -498,7 +535,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background-color: rgba(17,24,39,.95);
     font-weight: 300;
     margin-top: 20px;
 }
@@ -507,7 +544,7 @@ form .btn2{
     color: #ff044f;
 }
 .copyright a{
-    color: #00A9FF;
+    color: rgb(33 144 255);
     font-weight: 500;
 }
 
