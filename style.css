@@ -77,12 +77,14 @@ nav ul li a:hover::after{
 
 .header-text h1{
     font-size: 70px;
-    margin-bottom: 20px; 
-    animation: moveUp 3s linear 0.3s forwards;
+    animation: moveLeftDown 2s linear 0.3s forwards;
+
 }
-.header-text h1 span{
+.header-text .name{
     font-size: 100px;
+    animation: moveRight 2s linear 0.3s forwards;
 }
+
 @keyframes moveUp
 {
     0%{
@@ -100,13 +102,63 @@ nav ul li a:hover::after{
         transform: translateY(0);
     }
 }
-.header-text h1 span{
+@keyframes moveLeftDown
+{
+    0%{
+        opacity: 0;
+        transform: translate(-100px,100px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes moveLeft
+{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes moveRight
+{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.header-text .name{
     /* make gradient color using (#31B7C2 + #7BC393) */
     background: linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
 }
 
 .header-text .element {
@@ -115,6 +167,15 @@ nav ul li a:hover::after{
     color: transparent;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
+    animation: fade 5s linear infinite;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .header-text .element::before{
     content: attr(data-text);
@@ -591,7 +652,8 @@ nav .fas{
     .header-text h1{
         font-size: 45px;
     }
-    .header-text h1 span{
+    .header-text .name{
+    
         font-size: 70px !important; 
     }
     nav .fas{
