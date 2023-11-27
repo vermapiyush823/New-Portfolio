@@ -657,10 +657,17 @@ nav .fas{
     .tab-contents .skills1 .progress-bar div{
         height: 7px;
     }
-    .tab-links{
+    .tab-titles>.tab-links{
         margin-right: 20px;
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
+    .tab-contents>ul>li>span{
+        font-size: 16px;
+    }
+    /* .tab-links{
+        margin-right: 20px;
+        font-size: 40px !important;
+    } */
     .skills1 .progress-bar div span{
         height: 20px;
         width: 20px;
