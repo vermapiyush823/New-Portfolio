@@ -411,11 +411,14 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     --tw-shadow: 0px 10px 40px 0px rgba(40,49,60,.3);
-    --tw-shadow-colored: 0px 10px 40px 0px var(--tw-shadow-color);
+    /* --tw-shadow-colored: 0px 10px 40px 0px var(--tw-shadow-color);
+    --tw-ring-offset-shadow: 0 0 #0000; */
+    --tw-ring-shadow: 0 0 #0000;
+
     border: 1px solid;
     border-color: rgb(33 144 255);
     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
-    transition: background 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 .services-list div i{
     font-size: 50px;
@@ -764,6 +767,8 @@ nav .fas{
     }
     .services-list div{
     --tw-shadow: 0px 10px 20px 0px rgba(40,49,60,.3);
+    --tw-shadow-colored: 0px 10px 10px 0px var(--tw-shadow-color);
+    padding: 30px;
 
     }
     .services-list div:hover{
