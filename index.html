@@ -265,32 +265,32 @@
     <script>
         $(document).ready(function () {
             let sections = $("section");
-            let container = $(".container");
-            // $(window).scroll(function () {
-            //     sections.each(function () {
-            //         let top = $(window).scrollTop();
-            //         let offset = $(this).offset().top - 550;
-            //         let height = $(this).outerHeight();
+            // let container = $(".container");
+            $(window).scroll(function () {
+                sections.each(function () {
+                    let top = $(window).scrollTop();
+                    let offset = $(this).offset().top - 430;
+                    let height = $(this).outerHeight();
 
-            //         if (top >= offset && top < offset + height) {
-            //             $(this).addClass("show-animate");
+                    if (top >= offset && top < offset + height) {
+                        $(this).addClass("show-animate");
 
-            //         } else {
-            //             $(this).removeClass("show-animate");
-            //         }
-            //     });
+                    } else {
+                        $(this).removeClass("show-animate");
+                    }
+                });
 
-            // });
+            });
         });
     </script>
-    <script>
+    <!-- <script>
         $(window).scroll(function () {
             console.log($(window).scrollTop());
             $('.container-about').css('opacity', $(window).scrollTop() /1100);
             $('.container-services').css('opacity', $(window).scrollTop() /1500);
             $('.container-work').css('opacity', -0.5+ $(window).scrollTop() / 1000);
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

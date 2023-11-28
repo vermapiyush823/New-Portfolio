@@ -219,12 +219,10 @@ nav ul li a:hover::after{
     padding: 60px 0;
     color: rgb(208, 223, 255);  
     transition: all 2s ease-in-out;
-    opacity: 1;
-    scale: 0.7;
+    opacity: 0;
 }
 #about.show-animate{
     opacity: 1;
-    scale: 1;
 }
 
 .sub-title{
@@ -391,8 +389,13 @@ nav ul li a:hover::after{
 
 /* services */ 
 
-#service{
-    padding: 30px 0;  
+#services{
+    padding: 30px 0 0 10px 0;  
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+#services.show-animate{
+    opacity: 1;
 }
 
 .services-list{
@@ -412,7 +415,7 @@ nav ul li a:hover::after{
     border: 1px solid;
     border-color: rgb(33 144 255);
     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s;
 }
 .services-list div i{
     font-size: 50px;
@@ -445,6 +448,12 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
     margin-top: 50px;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+
+}
+#portfolio.show-animate{
+    opacity: 1;
 }
 
 .work-list{
@@ -541,7 +550,12 @@ nav ul li a:hover::after{
 
 /* contact */
 #contact{
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+#contact.show-animate{
+    opacity: 1;
 }
 .contact-left{
     flex-basis: 35%;
@@ -747,6 +761,10 @@ nav .fas{
         font-size: 6px;
         margin-top: -5px;
         margin-right: -10px;
+    }
+    .services-list div{
+    --tw-shadow: 0px 10px 20px 0px rgba(40,49,60,.3);
+
     }
     .services-list div:hover{
         background : linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
