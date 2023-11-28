@@ -44,7 +44,7 @@
     </div>
     <!-- About  -->
     <section id="about" class="show-animate">
-        <div class="container">
+        <div class="container container-about">
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>I'm an aspiring software engineer, currently pursuing B.Tech in Computer Science. I have a keen
@@ -124,7 +124,7 @@
     </section>
     <!-- Services -->
     <section id="services">
-        <div class="container">
+        <div class="container container-services">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
@@ -157,7 +157,7 @@
 
     <!-- Work -->
     <section id="portfolio">
-        <div class="container">
+        <div class="container container-work">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
@@ -265,21 +265,31 @@
     <script>
         $(document).ready(function () {
             let sections = $("section");
-            $(window).scroll(function () {
-                sections.each(function () {
-                    let top = $(window).scrollTop();
-                    let offset = $(this).offset().top - 550;
-                    let height = $(this).outerHeight();
+            let container = $(".container");
+            // $(window).scroll(function () {
+            //     sections.each(function () {
+            //         let top = $(window).scrollTop();
+            //         let offset = $(this).offset().top - 550;
+            //         let height = $(this).outerHeight();
 
-                    if (top >= offset && top < offset + height) {
-                        $(this).addClass("show-animate");
-                    } else {
-                        $(this).removeClass("show-animate");
-                    }
-                });
-            });
+            //         if (top >= offset && top < offset + height) {
+            //             $(this).addClass("show-animate");
+
+            //         } else {
+            //             $(this).removeClass("show-animate");
+            //         }
+            //     });
+
+            // });
         });
-
+    </script>
+    <script>
+        $(window).scroll(function () {
+            console.log($(window).scrollTop());
+            $('.container-about').css('opacity', $(window).scrollTop() /1100);
+            $('.container-services').css('opacity', $(window).scrollTop() /1500);
+            $('.container-work').css('opacity', -0.5+ $(window).scrollTop() / 1000);
+        });
     </script>
 </body>
 
