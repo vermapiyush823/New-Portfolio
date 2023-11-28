@@ -769,7 +769,13 @@ nav .fas{
     --tw-shadow: 0px 10px 20px 0px rgba(40,49,60,.3);
     --tw-shadow-colored: 0px 10px 10px 0px var(--tw-shadow-color);
     padding: 30px;
-
+    }
+    .services-list div i{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .services-list div h2{
+        font-size: 25px;
     }
     .services-list div:hover{
         background : linear-gradient(90deg,#4c73ff 2.34%,#389bff 100.78%);
