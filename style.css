@@ -106,7 +106,7 @@ nav ul li a:hover::after{
 {
     0%{
         opacity: 0;
-        transform: translate(-100px,100px);
+        transform: translate(100px,100px);
     }
     80%{
         transform: translateX(20px);
@@ -147,7 +147,7 @@ nav ul li a:hover::after{
     }
     90%{
         opacity: 1;
-        transform: translateX(-40px);
+        transform: translateX(40px);
     }
     100%{
         transform: translateX(0);
@@ -167,8 +167,13 @@ nav ul li a:hover::after{
     color: transparent;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
-    animation: fade 5s linear infinite;
+    /* animation: fade 5s forwards infinite; */
 }
+/* make fade animation sync with animateText animation 
+    1s = 100% 
+    4.5s = 450%
+    450% / 100% = 4.5
+}*/
 @keyframes fade{
     0%{
         opacity: 0;
@@ -196,9 +201,14 @@ nav ul li a:hover::after{
 @keyframes animateText {
     0%,100%{
         width: 0;
+        opacity: 0;
     }
     50%{
         width: 120%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
     }
 }
 
