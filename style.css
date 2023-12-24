@@ -310,11 +310,11 @@ nav ul li a:hover::after {
 .skills1 .progress-bar {
   background: rgb(208, 223, 255);
   width: 800px;
-  height: 10px;
+  height: 7px;
   border-radius: 5px;
 }
 .skills1 .progress-bar div {
-  height: 10px;
+  height: 7px;
   border-radius: 5px;
   width: 0%;
   background: linear-gradient(90deg, #4c73ff 2.34%, #389bff 100.78%);
